@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ServicesService } from '../app/services/services.service';
 import  data1 from '../assets/ProductData.json';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ export class AppComponent {
   imgs: any;
   data1:any=data1;
   p:any
+  searchText:any;
 
   constructor(private service: ServicesService) {}
 
